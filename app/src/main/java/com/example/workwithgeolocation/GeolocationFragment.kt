@@ -35,7 +35,6 @@ class GeolocationFragment : Fragment() {
                 getString(R.string.dialog_title_no_gps),
                 getString(R.string.dialog_message_no_gps)) }
         }
-
     }
 
     private val onLocationListener = object : LocationListener {
@@ -153,6 +152,14 @@ class GeolocationFragment : Fragment() {
             AlertDialog.Builder(it)
                 .setTitle(getString(R.string.dialog_address_title))
                 .setMessage(addressLine)
+                .setPositiveButton(getString(R.string.show_on_map)) {_, _ ->
+                    activity?.supportFragmentManager?.apply {
+                        beginTransaction()
+                            .add(R.id.fragment_container, MapsFragment())
+                            .addToBackStack("")
+                            .commitAllowingStateLoss()
+                    }
+                }
                 .setNegativeButton(getString(R.string.dialog_close)){dialog, _ -> dialog.dismiss()}
                 .create()
                 .show()
