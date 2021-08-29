@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">WorkWithGeolocation</string>
+    <string name="show_geolocation">show geolocation</string>
+    <string name="close_dialog">Close</string>
+
+    <string name="dialog_rationale_title">Access to geolocation </string>
+    <string name="dialog_rationale_message">To determine the location, you need to access geolocation</string>
+    <string name="dialog_rationale_grant_access">Grant access</string>
+    <string name="dialog_rationale_deny_access">Deny access</string>
+
+    <string name="dialog_message_last_location_unknown">The whereabouts are unknown. Turn on GPS if you want to find your location</string>
+    <string name="dialog_message_last_known_location">The last known location is shown. Turn on GPS if you want to update your location</string>
+
+    <string name="dialog_title_no_gps">Access to geolocation is closed</string>
+    <string name="dialog_message_no_gps">To locate a location, you need to access geolocation</string>
+    <string name="dialog_title_gps_turned_off">GPS disabled </string>
+    <string name="dialog_message_gps_turned_off">To determine the location, you need to turn on GPS</string>
+    <string name="dialog_close">Close</string>
+
+    <string name="dialog_address_title">Your address</string>
+
+    <string name="text_address">Москва, Красная площадь 1</string>
+    <string name="default_address">Red Square, 1, Moscow</string>
+    <string name="button_search_map">Search</string>
+    <string name="marker_start">Start</string>
+    <string name="show_on_map">Show on map</string>
+
 </resources>
