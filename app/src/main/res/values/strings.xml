@@ -19,4 +19,10 @@
 
     <string name="dialog_address_title">Your address</string>
 
+    <string name="text_address">Москва, Красная площадь 1</string>
+    <string name="default_address">Red Square, 1, Moscow</string>
+    <string name="button_search_map">Search</string>
+    <string name="marker_start">Start</string>
+    <string name="show_on_map">Show on map</string>
+
 </resources>
